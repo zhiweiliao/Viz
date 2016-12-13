@@ -1,0 +1,188 @@
+.imagePlans img{
+    z-index:0;
+    width: 100%;
+    margin: 10px;
+    opacity: 1;
+}
+
+.imageElevs img{
+    z-index: 0;
+    width: 100%;
+    margin: 10px;
+    opacity: 1;
+}
+
+.Times .measures{
+padding-top: 30px;
+    height:120px;
+    z-index: 30;
+}
+
+.pies{
+    z-index: 20;
+}
+
+
+
+#imagePlan-1 svg{
+    z-index: 0;
+    position: absolute;
+    top:0;
+    opacity: 1;
+    transform: scale(1.6) rotate(-15deg) translateX(3px) translateY(65px);
+
+}
+
+
+#imageElev-1 svg {
+    z-index: 0;
+    position: absolute;
+    top:0;
+    opacity: 1;
+    transform: scale(1.65) rotate(0deg) translateX(-25px) translateY(-30px);
+
+}
+
+#imagePlan-2 svg{
+    z-index: 0;
+    position: absolute;
+    top:0;
+    opacity: 1;
+    transform: scale(1.5) rotate(-0deg) translateX(15px) translateY(45px);
+}
+
+#imageElev-2 svg {
+    z-index: 0;
+    position: absolute;
+    top:0;
+    opacity: 1;
+    transform: scale(1.65) rotate(0deg) translateX(-50px) translateY(100px);
+}
+
+#imagePlan-3 svg{
+    z-index: 0;
+    position: absolute;
+    top:0;
+    opacity: 1;
+    transform: scale(1.81) rotate(-.5deg) translateX(10px) translateY(45px);
+}
+
+#imageElev-3 svg {
+    z-index: 0;
+    position: absolute;
+    top:0;
+    opacity: 1;
+    transform: scale(1) rotate(0deg) translateX(20px) translateY(0px);
+}
+
+#imagePlan-4 svg{
+    z-index: 0;
+    position: absolute;
+    top:0;
+    opacity: 1;
+    transform: scale(1.65) rotate(-0deg) translateX(18px) translateY(50px);
+}
+
+#imageElev-4 svg {
+    z-index: 0;
+    position: absolute;
+    top:0;
+    opacity: 1;
+    transform: scale(1.5) rotate(0deg) translateX(-45px) translateY(20px);
+}
+
+#imagePlan-5 svg{ /*savo*/
+    z-index: 0;
+    position: absolute;
+    top:0;
+    opacity: 1;
+    transform: scale(1.0) rotate(-0deg) translateX(15px) translateY(100px);
+}
+
+#imageElev-5 svg {
+    z-index: 0;
+    position: absolute;
+    top:0;
+    opacity: 1;
+    transform: scale(1.4) rotate(5deg) translateX(35px) translateY(50px);
+}
+
+#imagePlan-6 svg{
+    z-index: 0;
+    position: absolute;
+    top:0;
+    opacity: 1;
+    transform: scale(2.2) rotate(-0deg) translateX(24px) translateY(35px);
+}
+
+#imageElev-6 svg {
+    z-index: 0;
+    position: absolute;
+    top:0;
+    opacity: 1;
+    transform: scale(1.7) rotate(0deg) translateX(-20px) translateY(20px);
+}
+
+#imagePlan-7 svg{
+    z-index: 0;
+    position: absolute;
+    top:0;
+    opacity: 1;
+    transform: scale(1.55) rotate(-0deg) translateX(38px) translateY(93px);
+}
+
+#imageElev-7 svg {
+    z-index: 0;
+    position: absolute;
+    top:0;
+    opacity: 1;
+    transform: scale(1.4) rotate(0deg) translateX(20px) translateY(25px);
+
+}
+
+#imagePlan-8 svg{
+    z-index: 1;
+    position: absolute;
+    top:0;
+    opacity: 1;
+    transform: scale(1.5) rotate(-0deg) translateX(0px) translateY(50px);
+
+}
+
+#imageElev-8 svg {
+    z-index: 0;
+    position: absolute;
+    top:0;
+    opacity: 1;
+    transform: scale(2.1) rotate(0deg) translateX(-50px) translateY(90px);
+}
+
+/****************************************************************************************************************/
+/*  camera and subjects   */
+/****************************************************************************************************************/
+
+.camera:hover{
+    stroke:rgba(0, 0, 255,0);
+    stroke-width: 0px;
+    fill: rgba(0, 255, 0, 1);
+}
+
+.camera{
+    stroke: rgba(255, 255, 255, 1);
+    stroke-width: 0.5px;
+    fill: rgba(255, 195, 0, .8);
+}
+
+.subject{
+    stroke:rgba(0,0, 0, 1);
+    stroke-width: 0.2px;
+    fill: rgba(22, 160, 133, .5);
+}
+
+.subject:hover{
+    stroke: rgba(255,87, 51, 1);
+    stroke-width: 0.1px;
+    fill: rgba(255,87, 51, 1);
+    fill-opacity:1
+}
+

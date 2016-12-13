@@ -1,0 +1,364 @@
+
+/* my CSS STYLES */
+
+body {
+    position:relative;
+    font-family: 'Raleway', sans-serif;
+    background-color:#000;
+    font-size: 15px;
+    color:white;
+}
+.title-name {font-size: 5em; text-align: center; font-weight: 100;}
+.subtitle-name {font-size: 2.5em; text-align: center; font-weight: 100;}
+.title-numbers {font-size: 3.5em;}
+.title-numbers-name {font-size: 1.5em; font-weight: 300;}
+
+
+
+
+
+#bg {
+    margin:0;
+    height:100%;
+    overflow:hidden;
+}
+
+#bg img {
+    min-height:100%;
+    min-width:100%;
+    height:600px;
+    width:auto;
+    position:absolute;
+    top:0; bottom:0;
+    margin:auto;
+    margin-left: -2%;
+    transform: translateX(-00%);
+}
+
+#mapid {
+    z-index: 0;
+
+    min-height:100%;
+    min-width:100%;
+    position:absolute;
+    height: 400px; }
+
+
+.wrap{
+    text-align: left;
+}
+
+/*********************/
+/*  TOOLTIP OVERLAY  */
+/*********************/
+
+.tooltip-title {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+
+
+.labels{
+    font-size:15px;
+    text-anchor: start;
+    fill: yellow
+}
+
+.d3-tip {
+    z-index: 10;
+    font-size: 12px;
+    line-height:0;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: absolute;
+    top: 0px;
+    left:0px;
+    border-radius: 3px;
+
+}
+
+.d3-tip.n:after {
+    margin: -1px 0 0 0;
+    top: 100%;
+    left: 0;
+}
+
+
+.head4{
+    color:  whitesmoke;
+    font-size: 12px;
+    text-align: left;
+    position: relative;
+    left:5%;
+}
+
+.head5{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+
+.head6{
+    font-size: 9px;
+}
+
+
+.intro-text {
+    z-index: 4;
+    color: #FFF;
+    margin: 0 auto;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    opacity: 1;
+}
+#preintro, #byline {
+    z-index: 4;
+    padding: 5px;
+    font-size: 16px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Raleway';
+}
+
+#introtitle {
+    z-index: 4;
+    font-size: 110px;
+    font-family: 'Poiret One';
+    opacity: 0.85;
+    color: white;
+}
+
+
+
+/**************/
+/*  LOAD   */
+/**************/
+
+@keyframes pulse_animation {
+    0% { transform: scale(1.0); }
+    10% { transform: scale(1.01); }
+    20% { transform: scale(1.02); }
+    30% { transform: scale(1.03); }
+    40% { transform: scale(1.05); }
+    50% { transform: scale(1.08); }
+    60% { transform: scale(1.05); }
+    70% { transform: scale(1.03); }
+    80% { transform: scale(1.02); }
+    90% { transform: scale(1.01); }
+    100% { transform: scale(1.00); }
+}
+.pulse {
+    animation-name: pulse_animation;
+    animation-duration: 5000ms;
+    transform-origin:70% 70%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+/* ----------------------------------------------------------------------------------------------
+// Navigation bar
+----------------------------------------------------------------------------------------------*/
+.affix {
+    top:50px;
+    width: 100%;
+    z-index: 20 !important;
+}
+.navbar {
+    margin-bottom: 0px;
+}
+
+.affix ~ .container-fluid {
+    position: relative;
+    top: 0px;
+}
+
+/* ----------------------------------------------------------------------------------------------
+// Intro
+----------------------------------------------------------------------------------------------*/
+/* Background images */
+#introSection {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('../img/ShinersFOV.jpg');
+height:650px;
+}
+
+.intro-section{
+    background-color: #000 ;
+}
+
+.noBackground {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.noBackgroundInverse {
+    background-color: #000;
+    border-color:#000;
+
+
+}
+
+/* ----------------------------------------------------------------------------------------------
+// Modal
+----------------------------------------------------------------------------------------------*/
+.modal{
+     color:#333;
+}
+
+.pad{
+    padding-top:150px;
+}
+
+.pad2{
+    padding-top:90px;
+}
+
+/* ----------------------------------------------------------------------------------------------
+// axis
+----------------------------------------------------------------------------------------------*/
+
+
+.axis path,
+
+
+.axis line{
+    fill: none;
+    stroke: white;
+    shape-rendering: crispEdges;
+}
+
+
+.axis text {
+    font-size: 10px;
+    fill:  white;
+}
+
+.axisText{
+    font-size: 11px;
+    fill:  white;
+}
+
+.brush .extent {
+    stroke: none;
+    fill-opacity: 1;
+    shape-rendering: crispEdges;
+}
+
+.brush {
+    fill: #ccc;
+    fill‐opacity: .5;
+    pointer‐events: none;
+}
+
+
+.line {
+    fill: none;
+    stroke:  #ffffff;
+    stroke-width: 1.5px;
+}
+
+
+/*************/
+/*    Preloader   */
+/*************/
+
+#preloader {
+    /*position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background-color: #f2f2f2;*/ }
+
+#preloader img {
+    width: 50pt;
+    /*margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);*/ }
+
+.loadercontainer{
+    width: 66px;
+    height: 100px;
+    margin: 20px auto;
+    margin-top: 20px;
+}
+
+.block{
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+    margin: 0 10px 10px 0;
+    width: 9px;
+    height: 9px;
+    border-radius: 2px;
+    background: #FFF;
+}
+
+.block:nth-child(4n+1){ animation: wave 2s ease .0s infinite;}
+.block:nth-child(4n+2){ animation: wave 2s ease .2s infinite;}
+.block:nth-child(4n+3){ animation: wave 2s ease .4s infinite;}
+.block:nth-child(4n+4){ animation: wave 2s ease .6s infinite; margin-right: 0;  }
+
+@keyframes wave {
+    0% {top: 0; opacity: 1;}
+    50% {top: 30px; opacity: .2;}
+    100% {top: 0; opacity: 1;}
+}
+
+
+/* ----------------------------------------------------------------------------------------------
+// Credits
+----------------------------------------------------------------------------------------------*/
+
+#creditsSection{
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    font-size: 0.85em;
+    padding: 0px 25px 0px 20px;
+}
+
+@media all and (max-width: 1300px){
+    #creditsSection h1{font-size: 2.5em;}
+    #creditsSection h3{font-size: 1.4em;}
+    #creditsSection{font-size: 1.0em;}
+}
+
+.credits{
+    font-size: 0.8em;
+    padding: 0px 25px 0px 20px;
+}
+.creditsmiddle{
+    font-size: 0.8em;
+    padding: 0px 25px 0px 20px;
+    border-right-color: white;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-left-color: white;
+    border-left-width: 1px;
+    border-left-style: solid;
+}
+
+mark {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1em;
+    padding: 0em;
+    background-color: black;
+    color: rgba(22, 160, 133, 1);;
+}
+
+a{ color: rgba(255, 195, 0, 1);}
+
+btn:hover{
+    stroke: rgba(255, 195, 0, 1);
+}
