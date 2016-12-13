@@ -1,0 +1,911 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Collective Visual Field</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+
+	<link rel="stylesheet" href="css/leaflet.css">
+	<link rel="stylesheet" href="css/scrolling-nav.css">
+
+	<!-- the latest style-->
+	<link rel="stylesheet" href="css/overlay.css">
+	<link rel="stylesheet" href="css/style.css">
+
+
+	<!-- Fonts-->
+	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300|Roboto:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Raleway|Poiret+One' rel='stylesheet' type='text/css'>
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+
+<!-- ..................................................................................... -->
+<!-- Navigation bar-->
+<!-- ..................................................................................... -->
+
+<nav class="navbar navbar-inverse navbar-fixed-top noBackground" id="navbar" style="visibility:visible;" >
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">Foreground</a>
+		</div>
+		<ul class="nav navbar-nav">
+
+			<li><a class="page-scroll" href="#Vision">Vision</a></li>
+			<li><a class="page-scroll" href="#Overview">Overview</a></li>
+
+<!--			<li><a class="page-scroll" href="#dualviews">Dual View</a></li>		-->
+
+			<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Dual View<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a class="page-scroll" href="#part">Parthenon</a></li>
+					<li><a class="page-scroll" href="#pant">Pantheon</a></li>
+					<li><a class="page-scroll" href="#camp">Campidoglio</a></li>
+					<li><a class="page-scroll" href="#sagr">Sagrada Familia</a></li>
+					<li><a class="page-scroll" href="#vill">Villa Savoye</a></li>
+					<li><a class="page-scroll" href="#ronc">Ronchamp</a></li>
+					<li><a class="page-scroll" href="#gugg">Guggenheim, Bilbao</a></li>
+					<li><a class="page-scroll" href="#cctv">CCTV Headquarter</a></li>
+
+
+
+
+
+
+
+
+
+				</ul>
+			</li>
+
+			<li><a class="page-scroll" href="#Iconic">Iconic Index</a></li>
+			<li><a class="page-scroll" href="#site">Site Location</a></li>
+			<li><a class="page-scroll" href="#Background">Background</a></li>
+
+		</ul>
+	</div>
+</nav>
+
+<!-- ..................................................................................... -->
+<!-- Cover page-->
+<!-- ..................................................................................... -->
+
+<div id="introSection">
+
+	<div class="containervertical">
+		<div class="row">
+
+			<br><br><br>
+
+			<div class="row">
+				<h1 class="title-name">
+
+					<span class="fadeOnLoad0">COLLECTIVE VISUAL FIELD <br>IN BUILT ENVIRONMENT</span>
+				</h1>
+
+                <h6 class="title-numbers-name col-xs-12  text-center" style="padding:5px">
+
+                    <span class="fadeOnLoad0">by Zhiwei Liao</span>
+                </h6>
+
+
+            </div>
+
+
+
+
+			<div id="preloader" class="row col-xs-12 col-md-12 text-center " style="font-size: 1.0em">
+				<br/>
+				<span><i class="fa fa-spinner fa-3x fa-spin" style="color: grey; margin: 10px;"></i></span><br/>
+				<span style="color: grey">Data is loading.</span><br/>
+			</div>
+
+			<div class="row">
+
+				<div class="col-xs-12 col-md-4 text-center fadeOnLoad1 fact pulse">
+
+					<div class="title-numbers"><span class="fixing"></span>6 thousand</div><div class="title-numbers-name">
+					Instagram Photos Analysis</div>
+				</div>
+				<div class="col-xs-12 col-md-4 text-center fadeOnLoad2 fact pulse">
+					<div class="title-numbers">7 hundred</div><div class="title-numbers-name">Visual Interaction</div>
+				</div>
+				<div class="col-xs-12 col-md-4 text-center fadeOnLoad3 fact pulse">
+					<div class="title-numbers">8</div><div class="title-numbers-name">Architectural Sites</div>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+ </div>
+
+<!-- ..................................................................................... -->
+<!-- explanation  page-->
+<!-- ..................................................................................... -->
+
+<section  id="Vision" class="intro-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2"></div>
+				<div class="col-lg-8">
+					<h1>Vision</h1>
+
+
+					<p>As we may have noticed quite often, a professional photographer takes photos different from a normal person.
+					What are the professional efforts to make a better shot if using the same equipment?
+					</p>
+
+					<p>As one of the architects who design buildings, I rarely know the way people perceive buildings,
+					such as locations where they tend to stand and frame their
+					views, features which draw their attention and even details that they care about.
+					Through computing a series of photos from social media such as Instagram and reconstructing a set of 3d points
+					including viewpoints, We can now visualize those information, hidden or not so obvious otherwise, and
+					compare those with the ones that framed by the photographers or the architects. As a result, on the one hand,
+						the photograph techniques can be represented to the general public, on the other, urban photos in the social media at large, which are shaped by the space, can be analysed and thus inform designers.</p>
+					<p>So here is the hypothesis: Computer Vision can improve the way people navigate the urban space and inform how we design it, virtually then physically.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<section id="Overview" class="intro-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2"></div>
+				<div class="col-lg-8">
+					<h1>Overview</h1>
+					<p><strong></strong>
+						In the past decade, we have been able to reconstruct 3d model of a given scene or a building through computation based on a series of overlapping images. There are existing application to use these reconstructed 3d information for urban tourism (Snavely, 2006). However, the attempts have been focusing more on the 3D representation, in which the relation between the viewpoints and the subject is less investigated. This project is to map out the location of the viewpoints on a site plan in 2D. The users can thus navigate the Instagram photos by referencing their individual viewpoint which can be filtered by brushing the time bar.	A photo of the building facade is also shown adjacently to highlight the computer detectable features such as contour and texture, which is closely related to human perception.				</p>
+				</div>
+				<div class="col-lg-12">
+					<!-- Trigger the modal with a button
+
+					<button type="button" class="btn btn-info btn-group-sm" data-toggle="modal" data-target="#myModal">Reconstruct 3D</button>
+-->
+					<img class="img-circle" data-toggle="modal" data-target="#myModal0"  src="img/isoPts0.jpg" alt="" height="64" >
+					<img class="img-circle" data-toggle="modal" data-target="#myModal1"  src="img/isoPts1.jpg" alt="" height="64" >
+					<img class="img-circle" data-toggle="modal" data-target="#myModal2"  src="img/isoPts2.jpg" alt="" height="64" >
+					<img class="img-circle" data-toggle="modal" data-target="#myModal3"  src="img/isoPts3.jpg" alt="" height="64" >
+					<img class="img-circle" data-toggle="modal" data-target="#myModal4"  src="img/isoPts4.jpg" alt="" height="64" >
+					<img class="img-circle" data-toggle="modal" data-target="#myModal5"  src="img/isoPts5.jpg" alt="" height="64" >
+					<img class="img-circle" data-toggle="modal" data-target="#myModal6"  src="img/isoPts6.jpg" alt="" height="64" >
+					<img class="img-circle" data-toggle="modal" data-target="#myModal7"  src="img/isoPts7.jpg" alt="" height="64" >
+
+
+
+
+
+					<!-- Modal -->
+					<div class="modal fade" id="myModal0" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">3D Reconstruction</h4>
+							</div>
+							<div class="modal-body">
+								<p>Parthenon</p>
+								<img src="img/isoPts0.jpg" alt="" height="400" >
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+					<div class="modal fade" id="myModal1" role="dialog">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title">3D Reconstruction</h4>
+								</div>
+								<div class="modal-body">
+									<p>Pantheon </p>
+									<img src="img/isoPts1.jpg" alt="" height="400" >
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="modal fade" id="myModal2" role="dialog">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title">3D Reconstruction</h4>
+								</div>
+								<div class="modal-body">
+									<p>Piazza Del Campidoglio</p>
+									<img src="img/isoPts2.jpg" alt="" height="400" >
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="modal fade" id="myModal3" role="dialog">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title">3D Reconstruction</h4>
+								</div>
+								<div class="modal-body">
+									<p>Sagrada Familia</p>
+									<img src="img/isoPts3.jpg" alt="" height="400" >
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="modal fade" id="myModal4" role="dialog">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title">3D Reconstruction</h4>
+								</div>
+								<div class="modal-body">
+									<p>Villa Savoye</p>
+									<img src="img/isoPts4.jpg" alt="" height="400" >
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="modal fade" id="myModal5" role="dialog">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title">3D Reconstruction</h4>
+								</div>
+								<div class="modal-body">
+									<p>Ronchamp</p>
+									<img src="img/isoPts5.jpg" alt="" height="400" >
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="modal fade" id="myModal6" role="dialog">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title">3D Reconstruction</h4>
+								</div>
+								<div class="modal-body">
+									<p>Guggenheim Museum, Bilbao</p>
+									<img src="img/isoPts6.jpg" alt="" height="400" >
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="modal fade" id="myModal7" role="dialog">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title">3D Reconstruction</h4>
+								</div>
+								<div class="modal-body">
+									<p>CCTV Headquarter</p>
+									<img src="img/isoPts7.jpg" alt="" height="400" >
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+<br><br><br><br><br><br><br>
+
+<!-- ..................................................................................... -->
+<!-- Main  page-->
+
+<!-- ..................................................................................... -->
+<nav  class="navbar navbar-inverse noBackgroundInverse " data-spy="affix" data-offset-top="1530" data-offset-bottom="1850" >
+	<div class="nav navbar-nav ">
+	<div class="container head6" >
+	<div class="row" >
+
+			<div class="col-sm-5">
+				<div><svg width="15px" height="15px"><circle cx="15" cy="15" r="7.5" fill="#FFC300" opacity="1">
+
+				</circle></svg>&nbsp Prevailing photo interest on site
+					<svg width="15px" height="15px"><circle cx="15" cy="15" r="7.5" fill="#B2BABB" opacity="1">
+
+					</circle></svg>&nbsp Other Views</div>
+			</div>
+
+			<div class="col-sm-4  ">
+
+				<div ><svg width="17.5px" height="15px"><circle cx="7.5" cy="10" r="5" fill="#FFC300" opacity="1">
+
+				</circle></svg>Viewer location </div>
+			</div>
+
+			<div class="col-sm-3 ">
+				<div ><svg width="17.5px" height="15px"><circle cx="7.5" cy="10" r="5" fill="#16a085" opacity="1">
+				</circle></svg>Detected  feature (size represents measurement count)</div>
+			</div>
+
+	</div>
+	</div>
+</div>
+
+
+</nav>
+
+
+<div class="container"  >
+
+	<div class="row pad" id="part">
+		<div class="col-sm-4 Titles">
+			<div class="pies" id="pie-1">
+				<p id="Titl-1"> </p>
+			</div>
+		</div>
+
+		<div class="col-sm-4 imagePlans">
+			<div  id="imagePlan-1" class="imgPlan">  </div>
+
+		</div>
+
+		<div class="col-sm-4 imageElevs">
+			<div  id="imageElev-1" class="imgElev">  </div>
+
+		</div>
+	</div>
+
+	<div class="row" >
+		<div class="col-sm-4 Titles"></div>
+
+		<div class="col-sm-4 Times">
+			<div  id="Time-1" class="Time">  </div>
+
+		</div>
+		<div class="col-sm-4 measures">
+			<div  id="Measure-1">  </div>
+		</div>
+	</div>
+
+	<div class="row pad2" id="pant">
+		<div class="col-sm-4 Titles">
+			<div class="pies" id="pie-2">
+				<p id="Titl-2"> </p>
+			</div>
+		</div>
+
+		<div class="col-sm-4 imagePlans">
+
+			<div  id="imagePlan-2" class="imgPlan">  </div>
+		</div>
+
+		<div class="col-sm-4 imageElevs">
+			<div  id="imageElev-2" class="imgElev">  </div>
+		</div>
+	</div>
+
+	<div class="row" >
+		<div class="col-sm-4 Titles"></div>
+
+		<div class="col-sm-4 Times">
+
+			<div  id="Time-2" class="Time">  </div>
+		</div>
+		<div class="col-sm-4 measures">
+			<div  id="Measure-2">  </div>
+		</div>
+	</div>
+
+	<div class="row pad2" id="camp">
+		<div class="col-sm-4 Titles">
+			<div class="pies" id="pie-3">
+				<p id="Titl-3"> </p>
+			</div>
+		</div>
+
+		<div class="col-sm-4 imagePlans">
+
+			<div  id="imagePlan-3" class="imgPlan">  </div>
+		</div>
+
+		<div class="col-sm-4 imageElevs">
+			<div  id="imageElev-3" class="imgElev">  </div>
+		</div>
+	</div>
+
+	<div class="row" >
+		<div class="col-sm-4 Titles"></div>
+
+		<div class="col-sm-4 Times">
+			<div  id="Time-3" class="Time">  </div>
+		</div>
+
+		<div class="col-sm-4 measures">
+			<div  id="Measure-3">  </div>
+		</div>
+	</div>
+
+	<div class="row pad2" id="sagr">
+		<div class="col-sm-4 Titles">
+			<div class="pies" id="pie-4">
+				<p id="Titl-4"> </p>
+			</div>
+		</div>
+
+		<div class="col-sm-4 imagePlans">
+
+			<div  id="imagePlan-4" class="imgPlan">  </div>
+		</div>
+
+		<div class="col-sm-4 imageElevs">
+			<div  id="imageElev-4" class="imgElev">  </div>
+		</div>
+	</div>
+
+	<div class="row" >
+		<div class="col-sm-4 Titles"></div>
+
+		<div class="col-sm-4 Times">
+
+			<div  id="Time-4" class="Time">  </div>
+		</div>
+		<div class="col-sm-4 measures">
+			<div  id="Measure-4">  </div>
+		</div>
+	</div>
+
+	<div class="row pad2" id="vill">
+		<div class="col-sm-4 Titles">
+			<div class="pies" id="pie-5">
+				<p id="Titl-5"> </p>
+			</div>
+		</div>
+
+		<div class="col-sm-4 imagePlans">
+
+			<div  id="imagePlan-5" class="imgPlan">  </div>
+		</div>
+
+		<div class="col-sm-4 imageElevs">
+			<div  id="imageElev-5" class="imgElev">  </div>
+		</div>
+	</div>
+
+	<div class="row" >
+		<div class="col-sm-4 Titles"></div>
+
+		<div class="col-sm-4 Times">
+
+			<div  id="Time-5" class="Time">  </div>
+		</div>
+		<div class="col-sm-4 measures">
+			<div  id="Measure-5">  </div>
+		</div>
+	</div>
+
+	<div class="row pad2" id="ronc" >
+		<div class="col-sm-4 Titles">
+			<div class="pies" id="pie-6">
+				<p id="Titl-6"> </p>
+			</div>
+		</div>
+
+		<div class="col-sm-4 imagePlans">
+
+			<div  id="imagePlan-6" class="imgPlan">  </div>
+		</div>
+
+		<div class="col-sm-4 imageElevs">
+			<div  id="imageElev-6" class="imgElev">  </div>
+		</div>
+	</div>
+
+	<div class="row" >
+		<div class="col-sm-4 Titles"></div>
+
+		<div class="col-sm-4 Times">
+
+			<div  id="Time-6" class="Time">  </div>
+		</div>
+		<div class="col-sm-4 measures">
+			<div  id="Measure-6">  </div>
+		</div>
+	</div>
+
+	<div class="row pad2" id="gugg">
+		<div class="col-sm-4 Titles">
+			<div class="pies" id="pie-7">
+				<p id="Titl-7"> </p>
+			</div>
+		</div>
+
+		<div class="col-sm-4 imagePlans">
+
+			<div  id="imagePlan-7" class="imgPlan">  </div>
+		</div>
+
+		<div class="col-sm-4 imageElevs">
+			<div  id="imageElev-7" class="imgElev">  </div>
+		</div>
+	</div>
+
+	<div class="row " >
+		<div class="col-sm-4 Titles"></div>
+
+		<div class="col-sm-4 Times">
+			<div  id="Time-7" class="Time">  </div>
+		</div>
+		<div class="col-sm-4 measures">
+			<div  id="Measure-7">  </div>
+		</div>
+	</div>
+
+	<div class="row pad2" id="cctv">
+		<div class="col-sm-4 Titles">
+			<div class="pies" id="pie-8">
+				<p id="Titl-8"> </p>
+			</div>
+		</div>
+
+		<div class="col-sm-4 imagePlans">
+
+			<div  id="imagePlan-8" class="imgPlan">  </div>
+		</div>
+
+		<div class="col-sm-4 imageElevs">
+			<div  id="imageElev-8" class="imgElev">  </div>
+		</div>
+	</div>
+</div>
+
+<br><br><br>
+<div class="container"  >
+	<div class="row" >
+		<div class="col-sm-4"></div>
+
+		<div class="col-sm-4 Times">
+
+			<div  id="Time-8" class="Time">  </div>
+		</div>
+
+		<div class="col-sm-4 measures">
+			<div  id="Measure-8">  </div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-- ..................................................................................... -->
+<!-- Dessert  page-->
+<!-- ..................................................................................... -->
+
+<section  class="intro-section ">
+	<div class="container pad2" id="Iconic">
+		<div class="row">
+			<div class="col-lg-2" id="bar-1"></div>
+			<div class="col-lg-8">
+				<h1>Iconic Index</h1>
+				<p><strong></strong>
+					The bar chart shows the percentage of prevailing views in the total photos analyzed					</p>
+			</div>
+
+
+			<div class="container">
+
+
+
+
+				<!-- Select box to choose the ranking type -->
+				<form class="form-inline">
+					<div class="form-group">
+						<label for="rankingType">Group by</label>
+						<select class="form-control" id="ranking-type">
+							<option value="year">Built Year</option>
+							<option value="percent">Prevailing Views Percentage (%)</option>
+							<option value="instagram">Instagram total upload</option>
+						</select>
+
+						<!-- Activity IV onchange="updateVisualization()" -->
+						<!--<button type="button" class="btn btn-link" id="change-sorting"><i class="glyphicon glyphicon-sort"></i> Sort</button>-->
+					</div>
+				</form>
+
+				<!-- Parent container for the visualization -->
+				<div id="chart-area"></div>
+
+			</div>
+
+
+
+		</div>
+
+	</div>
+</section>
+
+<section id="site" class="pad">
+                <div class="container">
+                    <div class="row ">
+
+
+						<!-- map ---------------------------------------------------------------------------------->
+						<div class="col-sm-8 ">
+							<div id="mapid"></div>
+						</div>
+
+						<div class="col-sm-4">
+							<div  >
+
+								<br>
+								<p class="head4">
+                                    <mark>More about the research:</mark> Collective Visual Field is to examine architecture based on internet photos as the collective visual perception.
+                                    The workflow of the project:
+									Processing and generating 3D points cloud from internet photos and its data-set,
+									Visualizing the data-set. A photo represents the visual consumption of a specific
+                                    subject in a particular moment,
+									which contains information of a localized viewpoint and the interest of the viewer.
+									This project is to examine the visual perception in a collective way in the built environment
+									through internet photos. As those photos are created with time and site specifically,
+									we are able to investigate a pattern about the viewer’s
+									behavior in the context of built environment through the geoData of the area,
+									the exact time of the photo that was taken, the camera coordinates and the 3D point coordinates
+									of the subject. SFM (structure from motion) is implemented to
+									compute the dataSet.
+								</p>
+							</div>
+						</div>
+
+                    </div>
+                </div>
+</section>
+
+<section id="Background" class="">
+
+
+
+
+	<!-- ..................................................................................... -->
+	<!-- Credits -->
+	<!-- ..................................................................................... -->
+
+	<div class="section" id="creditsSection">
+
+
+		<div class="containervertical">
+			<div class="row pad">
+				<div class="col-xs-12 col-md-12">
+					<h2>Acknowledgements</h2>
+					<p></p>
+					<p> I really appreciate the structure, teaching supports and knowledge of CS171,
+						which allows me systematically adsorb the fundamental principles
+						of visualization and the techniques around it.
+						 I really learn in depth by going through the process of developing the final project.
+						I would like to thank the entire CS171 team. Their input inspired me in many ways. </p>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-4 credits">
+						<h3>Data sources</h3>
+						<ul>
+							<li><mark>Structure from Motion</mark>, Changchang Wu, "VisualSFM: A Visual Structure from Motion System",2011
+							<a href="http://ccwu.me/vsfm/" target="_blank">link</a></li>
+
+							<li><mark>Bundle Adjustment</mark>, Changchang Wu, Sameer Agarwal, Brian Curless, and Steven M. Seitz,
+								"Multicore Bundle Adjustment", CVPR 2011</li>
+							<li>
+								<a href="https://www.instagram.com/explore/tags/parthenon/" target="_blank">Parthenon</a>
+							</li>
+							<li>
+								<a href="https://www.instagram.com/explore/tags/pantheon/" target="_blank">Pantheon</a>
+							</li>
+							<li>
+								<a href="https://www.instagram.com/explore/locations/371603/piazza-del-campidoglio/" target="_blank">piazza del campidoglio</a>
+							</li>
+							<li>
+								<a href="https://www.instagram.com/explore/tags/SagradaFamilia/" target="_blank">Sagrada Familia</a>
+							</li>
+
+							<li>
+								<a href="https://www.instagram.com/explore/tags/VillaSavoye/" target="_blank">Villa Savoye</a>
+							</li>
+							<li>
+								<a href="https://www.instagram.com/explore/tags/ronchamp/" target="_blank">Ronchamp</a>
+							</li>
+							<li>
+								<a href="https://www.instagram.com/explore/tags/guggenheim/" target="_blank">Guggenheim, Bilbao</a>
+							</li>
+							<li>
+								<a href="https://www.instagram.com/explore/tags/cctvheadquarters/" target="_blank">CCTV Headquarters</a>
+							</li>
+
+							<li>
+								<a href="https://www.google.com/maps" target="_blank">Google Maps</a>
+							</li>
+
+
+
+
+
+						</ul>
+						<br/>
+						<h3> </h3>
+
+					</div>
+					<div class="col-xs-12 col-md-4  credits creditsmiddle">
+						<h3>Images</h3>
+						<p></p>
+						<ul>
+							<li>
+								<a href="http://icouzin.princeton.edu/current-biology-visual-sensory-networks-and-effective-information-transfer-in-animal-groups/" target="_blank">Current Biology: Visual sensory networks and effective information transfer in animal groups</a> by Ariana Strandburg-Peshkin et al.
+							</li>
+
+							<li>
+								<a href="https://www.flickr.com/photos/79117486@N02/13918225550/sizes/l/" target="_blank">Guggenheim, Bilbao</a> by haymartxo
+							</li>
+
+							<li>
+								<a href="https://www.dezeen.com/2014/11/26/rem-koolhaas-defends-cctv-building-beijing-china-architecture/" target="_blank">Image of the CCTV building from Dezeen is courtesy of Shutterstock</a>
+							</li>
+
+							<li>
+								<a href="http://library.artstor.org.ezp-prod1.hul.harvard.edu/library/ExternalIV.jsp?objectId=8CJGbzQuJTE6NjU8ZlN7R3srWXkseFp9&fs=true" target="_blank">Museum Space at the Campodiglio Museum; Piazza del Campidoglio overview</a> by Carlo Aymonino
+							</li> Image and original data provided by ART on FILE </a>
+
+							<li>
+								<a href="https://www.flickr.com/photos/bradkaren/3642761216/sizes/l/" target="_blank">Parthenon</a> by Brad & Karen Francis
+							</li>
+
+							<li>
+								<a href="https://www.instagram.com/p/BKk4YA6Aa-L/?tagged=ronchamp" target="_blank">Ronchamp</a> by o.steinbauer
+							</li>
+
+
+
+
+
+
+
+
+						</ul>
+					</div>
+					<div class="col-xs-12 col-md-4 credits">
+						<h3>Plugins</h3>
+						<ul>
+							<li>
+								<a href="http://www.crummy.com/software/BeautifulSoup/bs4/doc/" target="_blank">Beautiful Soup</a>
+								(web scraping)
+							</li>
+							<li>
+								<a href="http://d3js.org/" target="_blank">d3.js</a>
+								(visualizations)
+							</li>
+							<li>
+								<a href="http://getbootstrap.com/getting-started/" target="_blank">Bootstrap</a>
+								(webpage layout)
+							</li>
+							<li>
+								<a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">Font Awesome</a>
+								(icons)
+							</li>
+							<li>
+                                <a href="http://leafletjs.com/" target="_blank">Leafletjs</a>
+							</li>
+						</ul>
+						<br/>
+
+						<h3>Process book</h3>
+						<a href="data/processBook.pdf" target="_blank">Click here to
+							download our process book.</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+                    <!-- Load JS libraries -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.easing.min.js"></script>
+
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/queue.min.js"></script>
+
+	<script src="js/colorbrewer.js"></script>
+	<script src="js/scrolling-nav.js"></script>
+	<script src="js/leaflet.js"></script>
+<script src="js/stationMap.js"></script>
+<script src="js/d3.min.js"></script>
+	<script src="js/d3.tip.js"></script>
+
+<!-- ....................................................... plan and facade-->
+	<script src="js/vis-facade.js"></script>
+	<script src="js/vis-scatterPlot.js"></script>
+	<script src="js/attention.js"></script>
+	<script src="js/Timeline.js"></script>
+	<script src="js/measure.js"></script>
+	<script src="js/viewPercent.js"></script>
+	<script src="js/main.js"></script>
+
+
+
+</body>
+</html>
