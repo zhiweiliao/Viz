@@ -1,6 +1,9 @@
 
 /* my CSS STYLES */
 
+
+
+
 body {
     position:relative;
     font-family: 'Raleway', sans-serif;
@@ -14,6 +17,15 @@ body {
 .title-numbers-name {font-size: 1.5em; font-weight: 300;}
 
 
+
+@media only screen and (max-width: 991px) {
+
+    #rotator {
+        max-width: 100%;
+        height: auto;
+    }
+
+}
 
 
 
